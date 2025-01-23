@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ProductService.Products.Api.Contracts\ProductService.Products.Api.Contracts.csproj" />
+      <ProjectReference Include="..\ProductService.Products.AppServices\ProductService.Products.AppServices.csproj" />
+    </ItemGroup>
+
+</Project>

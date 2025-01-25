@@ -1,3 +1,4 @@
+using System.Collections;
 using ProductService.Products.Domain;
 using ProductService.Products.Domain.Contracts.Models;
 

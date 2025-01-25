@@ -163,9 +163,9 @@
               "target": "Package",
               "version": "[9.0.1, )"
             },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[9.0.1, )"
             }
           },
           "imports": [

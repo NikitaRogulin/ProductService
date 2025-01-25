@@ -66,24 +66,31 @@ public class SalesPointService : ISalesPointService
             throw new Exception($"Не удалось получить точку продажи с таким id -{salesPointId}");
         }
 
-        var providedProducts = salesPoint.ProvidedProducts
-            .Where(pp => salesPointProducts.Contains());
-        
-        
-        /*if (salesPointProducts.All(salesPoint.ProvidedProducts.Contains))
-        {
-            for (int i = 0; i < salesPointProducts.Count; i++)
-            {
-                var salesProduct = salesPointProducts[i];
-                for (int j = 0; j < salesPoint.ProvidedProducts.Count; j++)
-                {
-                    var providedProducts = salesPoint.ProvidedProducts.ToList();
-                    if (salesProduct.ProductId == providedProducts[j].ProductId && providedProducts[j].Quantity != 0)
-                    {
+        var isProductValid = salesPoint.ProvidedProducts
+            .All(x => salesPointProducts
+                .Select(x => x.ProductId)
+                .Contains(x.ProductId));
 
-                    }
-                }
-            }
-        }*/
+        if (!isProductValid)
+        {
+            throw new Exception($"Покупаемые продукты не соответствуют продаваемым");
+        }
+
+        decimal totalAmount = 0;
+        
+        foreach (var product in salesPointProducts)
+        {
+            var price = (product.Product.Price * product.Quantity);
+            var productInPoint = salesPoint.ProvidedProducts.FirstOrDefault(x => x.ProductId == product.ProductId);
+            productInPoint.Quantity -= product.Quantity;
+            totalAmount += price;
+        }
+
+        if (money < totalAmount)
+        {
+            throw new Exception();
+        }
+        
+        await _unitOfWork.CommitAsync(cancellationToken);
     }
 }

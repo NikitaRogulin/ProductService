@@ -7,9 +7,26 @@ public static class WebRoutes
     public static class Product
     {
         public const string Path = BasePath + "/product";
-        public const string GetById =  "/{id}";
-        public const string Create = "/create";
+        public const string GetById = Path + "/{id}";
+        public const string Create = Path + "/create";
+        public const string Delete =  GetById + "/delete";
+        public const string Update = Path + "/update";
+    }
+    public static class Sale
+    {
+        public const string Path = BasePath + "/sale";
+        public const string GetById = Path + "/{id}";
+        public const string Create = Path + "/create";
         public const string Delete = GetById + "/delete";
-        public const string Update = "/update";
+        public const string Update = Path + "/update";
+    }
+    public static class SalesPoint
+    {
+        public const string Path = BasePath + "/salesPoint";
+        public const string GetById = Path + "/{id}";
+        public const string Create = Path + "/create";
+        public const string Delete = GetById + "/delete";
+        public const string Update = Path + "/update";
+        public const string Sell = Path + "/sell";
     }
 }

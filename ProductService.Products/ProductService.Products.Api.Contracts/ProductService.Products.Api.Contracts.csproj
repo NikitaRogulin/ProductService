@@ -10,4 +10,8 @@
       <None Remove="Properties\launchSettings.json" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\ProductService.Products.Domain.Contracts\ProductService.Products.Domain.Contracts.csproj" />
+    </ItemGroup>
+
 </Project>

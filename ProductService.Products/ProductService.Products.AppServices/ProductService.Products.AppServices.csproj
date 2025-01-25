@@ -12,6 +12,11 @@
 
     <ItemGroup>
       <ProjectReference Include="..\ProductService.Products.Domain.Contracts\ProductService.Products.Domain.Contracts.csproj" />
+      <ProjectReference Include="..\ProductService.Products.Domain\ProductService.Products.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.3" />
     </ItemGroup>
 
 </Project>

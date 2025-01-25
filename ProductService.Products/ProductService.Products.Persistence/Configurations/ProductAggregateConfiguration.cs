@@ -8,8 +8,10 @@ public class ProductAggregateConfiguration : IEntityTypeConfiguration<Product>
 {
     public void Configure(EntityTypeBuilder<Product> builder)
     {
-        builder.ToTable("products");
+        
         builder.HasKey(x => x.Id);
+        
+        builder.ToTable("products");
         builder.Property(x => x.Id).HasColumnName("id");
         builder.Property(x => x.Name).HasColumnName("name");
         builder.Property(x => x.Price).HasColumnName("price");

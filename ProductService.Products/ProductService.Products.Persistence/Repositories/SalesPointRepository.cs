@@ -17,9 +17,11 @@ public class SalesPointRepository : ISalesPointRepository
         _dbSet.Add(salesPoint);
     }
 
-    public ValueTask<SalesPoint?> GetById(Guid id, CancellationToken cancellationToken = default)
+    public async ValueTask<SalesPoint?> GetById(Guid id, CancellationToken cancellationToken = default)
     {
-        return _dbSet.FindAsync(id, cancellationToken);
+        return await _dbSet.Include(x=> x.ProvidedProducts)
+            .ThenInclude(x=> x.Product)
+            .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
     }
 
     public void Update(SalesPoint salesPoint)

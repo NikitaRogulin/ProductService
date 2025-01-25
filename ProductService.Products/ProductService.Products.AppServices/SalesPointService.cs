@@ -66,7 +66,11 @@ public class SalesPointService : ISalesPointService
             throw new Exception($"Не удалось получить точку продажи с таким id -{salesPointId}");
         }
 
-        if (salesPointProducts.All(salesPoint.ProvidedProducts.Contains))
+        var providedProducts = salesPoint.ProvidedProducts
+            .Where(pp => salesPointProducts.Contains());
+        
+        
+        /*if (salesPointProducts.All(salesPoint.ProvidedProducts.Contains))
         {
             for (int i = 0; i < salesPointProducts.Count; i++)
             {
@@ -76,10 +80,10 @@ public class SalesPointService : ISalesPointService
                     var providedProducts = salesPoint.ProvidedProducts.ToList();
                     if (salesProduct.ProductId == providedProducts[j].ProductId && providedProducts[j].Quantity != 0)
                     {
-                        
+
                     }
                 }
             }
-        }
+        }*/
     }
 }

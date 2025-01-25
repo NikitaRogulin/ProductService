@@ -11,5 +11,5 @@ public interface ISalesPointService
 
     public Task Delete(Guid id, CancellationToken cancellationToken = default);
 
-    public Task Sell(Guid id, decimal money);
+    public Task Sell(Guid salesPointId, List<SalesPointProduct> salesPointProducts,  decimal money, CancellationToken cancellationToken = default );
 }

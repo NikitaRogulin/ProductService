@@ -11,11 +11,15 @@ public class ProductsContext : DbContext
     public DbSet<Sale> Sales { get; set; }
     public DbSet<SalesPointProduct> SaleDatas { get; set; }
     public DbSet<SalesPoint> SalePoints { get; set; }
-
+    protected override void OnConfiguring
+        (DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.UseInMemoryDatabase(databaseName: "AuthorDb");
+    }
     public ProductsContext(DbContextOptions options) : base(options)
     {
     }
-
+    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfiguration(new ProductAggregateConfiguration());

@@ -4,6 +4,76 @@
     "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Persistence\\ProductService.Products.Persistence.csproj": {}
   },
   "projects": {
+    "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.AppServices\\ProductService.Products.AppServices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.AppServices\\ProductService.Products.AppServices.csproj",
+        "projectName": "ProductService.Products.AppServices",
+        "projectPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.AppServices\\ProductService.Products.AppServices.csproj",
+        "packagesPath": "C:\\Users\\46\\.nuget\\packages\\",
+        "outputPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.AppServices\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\46\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain.Contracts\\ProductService.Products.Domain.Contracts.csproj": {
+                "projectPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain.Contracts\\ProductService.Products.Domain.Contracts.csproj"
+              },
+              "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain\\ProductService.Products.Domain.csproj": {
+                "projectPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain\\ProductService.Products.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "D:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain.Contracts\\ProductService.Products.Domain.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -136,6 +206,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.AppServices\\ProductService.Products.AppServices.csproj": {
+                "projectPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.AppServices\\ProductService.Products.AppServices.csproj"
+              },
               "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain.Contracts\\ProductService.Products.Domain.Contracts.csproj": {
                 "projectPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain.Contracts\\ProductService.Products.Domain.Contracts.csproj"
               },

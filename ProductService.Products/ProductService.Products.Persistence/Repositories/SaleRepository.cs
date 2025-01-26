@@ -17,7 +17,7 @@ public class SaleRepository : ISaleRepository
         _dbSet.Add(sale);
     }
 
-    public ValueTask<Sale?> GetById(Guid id, CancellationToken cancellationToken = default)
+    public ValueTask<Sale?> GetById(long id, CancellationToken cancellationToken = default)
     {
         return _dbSet.FindAsync(id, cancellationToken);
     }

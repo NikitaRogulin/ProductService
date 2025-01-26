@@ -10,19 +10,19 @@ namespace ProductService.Products.Host.Controllers;
 [Route(WebRoutes.Product.Path)]
 public class ProductController : ControllerBase
 {
-    private IProductsService _productService;
-    public ProductController(IProductsService productService)
+    private IProductService _productService;
+    public ProductController(IProductService productService)
     {
         _productService = productService;
     }
     [HttpPost(WebRoutes.Product.Create)]
-    public Task<Guid> Create([FromBody] CreateProductRequest request, CancellationToken cancellationToken)
+    public Task<long> Create([FromBody] CreateProductRequest request, CancellationToken cancellationToken)
     {
-        return _productService.Create(request.Name, request.Price, cancellationToken);
+        return _productService.Create(request.Id, request.Name, request.Price, cancellationToken);
     }
 
     [HttpGet(WebRoutes.Product.GetById)]
-    public Task<Product> GetProduct([FromRoute] Guid id, CancellationToken cancellationToken)
+    public Task<Product> GetProduct([FromRoute] long id, CancellationToken cancellationToken)
     {
         return _productService.GetById(id, cancellationToken);
     }
@@ -34,7 +34,7 @@ public class ProductController : ControllerBase
     }
 
     [HttpDelete(WebRoutes.Product.Delete)]
-    public Task Delete([FromRoute] Guid id, CancellationToken cancellationToken)
+    public Task Delete([FromRoute] long id, CancellationToken cancellationToken)
     {
         return _productService.Delete(id, cancellationToken);
     }

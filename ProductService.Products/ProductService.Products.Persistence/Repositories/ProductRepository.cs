@@ -18,7 +18,7 @@ public class ProductRepository : IProductRepository
         _dbSet.Add(product);
     }
 
-    public ValueTask<Product?> GetById(Guid id, CancellationToken cancellationToken = default)
+    public ValueTask<Product?> GetById(long id, CancellationToken cancellationToken = default)
     {
         return _dbSet.FindAsync(id, cancellationToken);
     }

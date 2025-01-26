@@ -17,7 +17,7 @@ public class SalesPointRepository : ISalesPointRepository
         _dbSet.Add(salesPoint);
     }
 
-    public async ValueTask<SalesPoint?> GetById(Guid id, CancellationToken cancellationToken = default)
+    public async ValueTask<SalesPoint?> GetById(long id, CancellationToken cancellationToken = default)
     {
         return await _dbSet.Include(x=> x.ProvidedProducts)
             .ThenInclude(x=> x.Product)

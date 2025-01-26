@@ -17,13 +17,13 @@ public class SaleController : ControllerBase
         _saleService = saleService;
     }
     [HttpPost(WebRoutes.Sale.Create)]
-    public Task<Guid> Create([FromBody] CreateSaleRequest request, CancellationToken cancellationToken)
+    public Task<long> Create([FromBody] CreateSaleRequest request, CancellationToken cancellationToken)
     {
-        return _saleService.Create(request.DateTime, request.SalePointId, request.SaleProducts ,cancellationToken);
+        return _saleService.Create(request.Id,request.DateTime, request.SalePointId, request.SaleProducts ,cancellationToken);
     }
 
     [HttpGet(WebRoutes.Sale.GetById)]
-    public Task<Sale> GetProduct([FromRoute] Guid id, CancellationToken cancellationToken)
+    public Task<Sale> GetProduct([FromRoute] long id, CancellationToken cancellationToken)
     {
         return _saleService.GetById(id, cancellationToken);
     }
@@ -35,7 +35,7 @@ public class SaleController : ControllerBase
     }
 
     [HttpDelete(WebRoutes.Sale.Delete)]
-    public Task Delete([FromRoute] Guid id, CancellationToken cancellationToken)
+    public Task Delete([FromRoute] long id, CancellationToken cancellationToken)
     {
         return _saleService.Delete(id, cancellationToken);
     }

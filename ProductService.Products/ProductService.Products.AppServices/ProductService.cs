@@ -3,7 +3,7 @@ using ProductService.Products.Domain.Contracts.Models;
 
 namespace ProductService.Products.AppServices;
 
-public class ProductService : IProductsService
+public class ProductService : IProductService
 {
     private readonly IUnitOfWork _unitOfWork;
 
@@ -11,15 +11,15 @@ public class ProductService : IProductsService
     {
         _unitOfWork = unitOfWork;
     }
-    public async Task<Guid> Create(string name, decimal price, CancellationToken cancellationToken = default)
+    public async Task<long> Create(long id, string name, decimal price, CancellationToken cancellationToken = default)
     {
-        var product = new Product(Guid.NewGuid(), name, price);
+        var product = new Product(id, name, price);
         _unitOfWork.ProductRepository.Create(product);
         await _unitOfWork.CommitAsync(cancellationToken);
         return product.Id;
     }
 
-    public async Task<Product> GetById(Guid id, CancellationToken cancellationToken = default)
+    public async Task<Product> GetById(long id, CancellationToken cancellationToken = default)
     {
         var product = await _unitOfWork.ProductRepository.GetById(id, cancellationToken);
         if (product == null)
@@ -29,7 +29,7 @@ public class ProductService : IProductsService
         return product;
     }
 
-    public async Task Update(Guid id, string name, decimal price, CancellationToken cancellationToken = default)
+    public async Task Update(long id, string name, decimal price, CancellationToken cancellationToken = default)
     {
         var product = await _unitOfWork.ProductRepository.GetById(id, cancellationToken);
         if (product == null)
@@ -43,7 +43,7 @@ public class ProductService : IProductsService
         await _unitOfWork.CommitAsync(cancellationToken);
     }
 
-    public async Task Delete(Guid id, CancellationToken cancellationToken = default)
+    public async Task Delete(long id, CancellationToken cancellationToken = default)
     {
         var product = await _unitOfWork.ProductRepository.GetById(id, cancellationToken);
         if (product == null)

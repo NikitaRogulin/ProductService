@@ -12,16 +12,16 @@ public class SalesPointService : ISalesPointService
         _unitOfWork = unitOfWork;
     }
     
-    public async Task<Guid> Create(string name, ICollection<SalesPointProduct> providedProducts, ICollection<Sale> sales,
+    public async Task<long> Create(long id, string name, ICollection<SalesPointProduct> providedProducts, ICollection<Sale> sales,
         CancellationToken cancellationToken = default)
     {
-        var salesPoint = new SalesPoint(Guid.NewGuid(), name, providedProducts, sales);
+        var salesPoint = new SalesPoint(id, name, providedProducts, sales);
         _unitOfWork.SalesPointRepository.Create(salesPoint);
         await _unitOfWork.CommitAsync(cancellationToken);
         return salesPoint.Id;
     }
 
-    public async Task<SalesPoint> GetById(Guid id, CancellationToken cancellationToken = default)
+    public async Task<SalesPoint> GetById(long id, CancellationToken cancellationToken = default)
     {
         var salesPoint = await _unitOfWork.SalesPointRepository.GetById(id, cancellationToken);
         if (salesPoint == null)
@@ -30,7 +30,7 @@ public class SalesPointService : ISalesPointService
         }
         return salesPoint;
     }
-    public async Task Update(Guid id, string name, ICollection<SalesPointProduct> providedProducts, ICollection<Sale> sales,
+    public async Task Update(long id, string name, ICollection<SalesPointProduct> providedProducts, ICollection<Sale> sales,
         CancellationToken cancellationToken = default)
     {
         var salesPoint = await _unitOfWork.SalesPointRepository.GetById(id, cancellationToken);
@@ -46,7 +46,7 @@ public class SalesPointService : ISalesPointService
         await _unitOfWork.CommitAsync(cancellationToken);
     }
 
-    public async Task Delete(Guid id, CancellationToken cancellationToken = default)
+    public async Task Delete(long id, CancellationToken cancellationToken = default)
     {
         var salesPoint = await _unitOfWork.SalesPointRepository.GetById(id, cancellationToken);
         if (salesPoint == null)
@@ -57,7 +57,7 @@ public class SalesPointService : ISalesPointService
         await _unitOfWork.CommitAsync(cancellationToken);
     }
 
-    public async Task Sell(Guid salesPointId, List<SalesPointProduct> salesPointProducts,  decimal money, CancellationToken cancellationToken = default )
+    public async Task Sell(long salesPointId, List<SalesPointProduct> salesPointProducts,  decimal money, CancellationToken cancellationToken = default )
     {
         var salesPoint = await _unitOfWork.SalesPointRepository.GetById(salesPointId, cancellationToken);
         

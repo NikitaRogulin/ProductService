@@ -1,3 +1,3 @@
 namespace ProductService.Products.Api.Contracts.Request;
 
-public record CreateProductRequest(string Name, decimal Price);
+public record CreateProductRequest(long Id, string Name, decimal Price);

@@ -12,6 +12,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductService.Products.Per
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductService.Products.Domain", "ProductService.Products.Domain\ProductService.Products.Domain.csproj", "{121F8636-09DB-4CBA-93FF-FCF7B4B74C64}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Tests", "_Tests", "{EE537209-EB7B-40F1-B80A-577A8B47FB7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductService.Products.Domain.UnitTests", "ProductService.Products.Domain.UnitTests\ProductService.Products.Domain.UnitTests.csproj", "{A4123B52-1F3F-4B5F-92E2-0A4960BFDE2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +46,12 @@ Global
 		{121F8636-09DB-4CBA-93FF-FCF7B4B74C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{121F8636-09DB-4CBA-93FF-FCF7B4B74C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{121F8636-09DB-4CBA-93FF-FCF7B4B74C64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4123B52-1F3F-4B5F-92E2-0A4960BFDE2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4123B52-1F3F-4B5F-92E2-0A4960BFDE2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4123B52-1F3F-4B5F-92E2-0A4960BFDE2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4123B52-1F3F-4B5F-92E2-0A4960BFDE2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A4123B52-1F3F-4B5F-92E2-0A4960BFDE2D} = {EE537209-EB7B-40F1-B80A-577A8B47FB7D}
 	EndGlobalSection
 EndGlobal

@@ -13,15 +13,15 @@ public class SaleService : ISaleService
         _unitOfWork = unitOfWork;
     }
     
-    public async Task<Guid> Create(DateTime dateTime, Guid salesPointId, ICollection<SaleProduct> salesData, CancellationToken cancellationToken = default)
+    public async Task<long> Create(long id, DateTime dateTime, long salesPointId, ICollection<SaleProduct> salesData, CancellationToken cancellationToken = default)
     {
-        var sale = new Sale(Guid.NewGuid(), dateTime, salesPointId, salesData);
+        var sale = new Sale(id, dateTime, salesPointId, salesData);
         _unitOfWork.SaleRepository.Create(sale);
         await _unitOfWork.CommitAsync(cancellationToken);
         return sale.Id;
     }
 
-    public async Task<Sale> GetById(Guid id, CancellationToken cancellationToken = default)
+    public async Task<Sale> GetById(long id, CancellationToken cancellationToken = default)
     {
         var sale = await _unitOfWork.SaleRepository.GetById(id, cancellationToken);
         if (sale == null)
@@ -31,7 +31,7 @@ public class SaleService : ISaleService
         return sale;
     }
 
-    public async Task Update(Guid id, DateTime dateTime, Guid salesPointId, ICollection<SaleProduct> salesData,
+    public async Task Update(long id, DateTime dateTime, long salesPointId, ICollection<SaleProduct> salesData,
         CancellationToken cancellationToken = default)
     {
         var sale = await _unitOfWork.SaleRepository.GetById(id, cancellationToken);
@@ -48,7 +48,7 @@ public class SaleService : ISaleService
         await _unitOfWork.CommitAsync(cancellationToken);
     }
 
-    public async Task Delete(Guid id, CancellationToken cancellationToken = default)
+    public async Task Delete(long id, CancellationToken cancellationToken = default)
     {
         var sale = await _unitOfWork.SaleRepository.GetById(id, cancellationToken);
         if (sale == null)

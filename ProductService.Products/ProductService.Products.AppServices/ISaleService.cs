@@ -4,11 +4,11 @@ namespace ProductService.Products.AppServices;
 
 public interface ISaleService
 {
-    public Task<Guid> Create(DateTime dateTime, Guid salesPointId, ICollection<SaleProduct> salesData, CancellationToken cancellationToken = default);
-    public Task<Sale> GetById(Guid id, CancellationToken cancellationToken = default);
+    public Task<long> Create(long id, DateTime dateTime, long salesPointId, ICollection<SaleProduct> salesData, CancellationToken cancellationToken = default);
+    public Task<Sale> GetById(long id, CancellationToken cancellationToken = default);
 
-    public Task Update(Guid id, DateTime dateTime, Guid salesPointId, ICollection<SaleProduct> salesData,
+    public Task Update(long id, DateTime dateTime, long salesPointId, ICollection<SaleProduct> salesData,
         CancellationToken cancellationToken = default);
 
-    public Task Delete(Guid id, CancellationToken cancellationToken = default);
+    public Task Delete(long id, CancellationToken cancellationToken = default);
 }

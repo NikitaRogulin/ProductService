@@ -1,0 +1,13 @@
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Domain\bin\Debug\net8.0\ProductService.Products.Domain.deps.json
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Domain\bin\Debug\net8.0\ProductService.Products.Domain.dll
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Domain\bin\Debug\net8.0\ProductService.Products.Domain.pdb
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Domain\obj\Debug\net8.0\ProductService.Products.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Domain\obj\Debug\net8.0\ProductService.Products.Domain.AssemblyInfoInputs.cache
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Domain\obj\Debug\net8.0\ProductService.Products.Domain.AssemblyInfo.cs
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Domain\obj\Debug\net8.0\ProductService.Products.Domain.csproj.CoreCompileInputs.cache
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Domain\obj\Debug\net8.0\ProductService.Products.Domain.sourcelink.json
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Domain\obj\Debug\net8.0\ProductService.Products.Domain.dll
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Domain\obj\Debug\net8.0\refint\ProductService.Products.Domain.dll
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Domain\obj\Debug\net8.0\ProductService.Products.Domain.pdb
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Domain\obj\Debug\net8.0\ref\ProductService.Products.Domain.dll
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Domain\obj\Debug\net8.0\ProductService.Products.Domain.csproj.AssemblyReference.cache

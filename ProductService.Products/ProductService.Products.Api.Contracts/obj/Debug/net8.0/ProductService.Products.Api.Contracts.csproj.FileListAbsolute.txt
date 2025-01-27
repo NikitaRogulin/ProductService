@@ -1,0 +1,16 @@
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Api.Contracts\bin\Debug\net8.0\ProductService.Products.Api.Contracts.deps.json
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Api.Contracts\bin\Debug\net8.0\ProductService.Products.Api.Contracts.dll
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Api.Contracts\bin\Debug\net8.0\ProductService.Products.Api.Contracts.pdb
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Api.Contracts\bin\Debug\net8.0\ProductService.Products.Domain.dll
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Api.Contracts\bin\Debug\net8.0\ProductService.Products.Domain.pdb
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Api.Contracts\obj\Debug\net8.0\ProductService.Products.Api.Contracts.csproj.AssemblyReference.cache
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Api.Contracts\obj\Debug\net8.0\ProductService.Products.Api.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Api.Contracts\obj\Debug\net8.0\ProductService.Products.Api.Contracts.AssemblyInfoInputs.cache
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Api.Contracts\obj\Debug\net8.0\ProductService.Products.Api.Contracts.AssemblyInfo.cs
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Api.Contracts\obj\Debug\net8.0\ProductService.Products.Api.Contracts.csproj.CoreCompileInputs.cache
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Api.Contracts\obj\Debug\net8.0\ProductService.Products.Api.Contracts.sourcelink.json
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Api.Contracts\obj\Debug\net8.0\ProductS.95BB4C10.Up2Date
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Api.Contracts\obj\Debug\net8.0\ProductService.Products.Api.Contracts.dll
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Api.Contracts\obj\Debug\net8.0\refint\ProductService.Products.Api.Contracts.dll
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Api.Contracts\obj\Debug\net8.0\ProductService.Products.Api.Contracts.pdb
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.Api.Contracts\obj\Debug\net8.0\ref\ProductService.Products.Api.Contracts.dll

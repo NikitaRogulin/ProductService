@@ -1,0 +1,16 @@
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.AppServices\bin\Debug\net8.0\ProductService.Products.AppServices.deps.json
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.AppServices\bin\Debug\net8.0\ProductService.Products.AppServices.dll
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.AppServices\bin\Debug\net8.0\ProductService.Products.AppServices.pdb
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.AppServices\bin\Debug\net8.0\ProductService.Products.Domain.dll
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.AppServices\bin\Debug\net8.0\ProductService.Products.Domain.pdb
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.AppServices\obj\Debug\net8.0\ProductService.Products.AppServices.csproj.AssemblyReference.cache
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.AppServices\obj\Debug\net8.0\ProductService.Products.AppServices.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.AppServices\obj\Debug\net8.0\ProductService.Products.AppServices.AssemblyInfoInputs.cache
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.AppServices\obj\Debug\net8.0\ProductService.Products.AppServices.AssemblyInfo.cs
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.AppServices\obj\Debug\net8.0\ProductService.Products.AppServices.csproj.CoreCompileInputs.cache
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.AppServices\obj\Debug\net8.0\ProductService.Products.AppServices.sourcelink.json
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.AppServices\obj\Debug\net8.0\ProductS.B8C902D4.Up2Date
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.AppServices\obj\Debug\net8.0\ProductService.Products.AppServices.dll
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.AppServices\obj\Debug\net8.0\refint\ProductService.Products.AppServices.dll
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.AppServices\obj\Debug\net8.0\ProductService.Products.AppServices.pdb
+E:\C#\ProductService.Products\ProductService.Products\ProductService.Products.AppServices\obj\Debug\net8.0\ref\ProductService.Products.AppServices.dll

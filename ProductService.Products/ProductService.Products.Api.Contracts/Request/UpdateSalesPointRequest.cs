@@ -1,5 +1,5 @@
-using ProductService.Products.Domain.Contracts.Models;
+using ProductService.Products.Domain.Models;
 
 namespace ProductService.Products.Api.Contracts.Request;
 
-public record UpdateSalesPointRequest(long Id, string Name, ICollection<SalesPointProduct> ProvidedProducts, ICollection<Sale> Sales);
+public record UpdateSalesPointRequest(long Id, string Name, List<SalesPointProduct> ProvidedProducts, List<Sale> Sales);

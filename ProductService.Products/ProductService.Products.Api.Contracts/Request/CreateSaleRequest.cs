@@ -1,5 +1,5 @@
-using ProductService.Products.Domain.Contracts.Models;
+using ProductService.Products.Domain.Models;
 
 namespace ProductService.Products.Api.Contracts.Request;
 
-public record CreateSaleRequest(long Id, DateTime DateTime, long SalePointId, ICollection<SaleProduct> SaleProducts);
+public record CreateSaleRequest(long Id, DateTime DateTime, long SalesPointId, long ProductId, Product Product, SalesPoint SalesPoint, int ProductQuantity);

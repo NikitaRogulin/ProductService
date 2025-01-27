@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "HrDAUnbP6qtXqMFCgB2UaNtYcZCPccLNUmuA3mXIOC1N1EMzcU/S3f+D5yltQLn5slF6JTGXzXtFih00QijaPA==",
+  "dgSpecHash": "IuUFpVGPRfXl5K+cl/m9+Y4//nxw+cytY3/KWk8rVFHehYiFUdh8t2FHXsFdFJ1KkO9ADiNy5UETP1IyPChRsg==",
   "success": true,
   "projectFilePath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain\\ProductService.Products.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\46\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

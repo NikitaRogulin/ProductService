@@ -12,7 +12,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\ProductService.Products.AppServices\ProductService.Products.AppServices.csproj" />
-      <ProjectReference Include="..\ProductService.Products.Domain.Contracts\ProductService.Products.Domain.Contracts.csproj" />
       <ProjectReference Include="..\ProductService.Products.Domain\ProductService.Products.Domain.csproj" />
     </ItemGroup>
 

@@ -1,4 +1,5 @@
-using ProductService.Products.Domain.Contracts.Models;
+using ProductService.Products.Domain.Models;
+
 namespace ProductService.Products.Domain.IRepository;
 
 public interface IProductRepository
@@ -7,5 +8,4 @@ public interface IProductRepository
     public ValueTask<Product?> GetById(long id, CancellationToken cancellationToken = default);
     public void Update(Product product);
     public void Delete(Product product);
-
 }

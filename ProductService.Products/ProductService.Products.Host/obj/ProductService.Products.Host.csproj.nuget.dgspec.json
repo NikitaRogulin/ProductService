@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain.Contracts\\ProductService.Products.Domain.Contracts.csproj": {
-                "projectPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain.Contracts\\ProductService.Products.Domain.Contracts.csproj"
+              "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain\\ProductService.Products.Domain.csproj": {
+                "projectPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain\\ProductService.Products.Domain.csproj"
               }
             }
           }
@@ -83,9 +83,6 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain.Contracts\\ProductService.Products.Domain.Contracts.csproj": {
-                "projectPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain.Contracts\\ProductService.Products.Domain.Contracts.csproj"
-              },
               "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain\\ProductService.Products.Domain.csproj": {
                 "projectPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain\\ProductService.Products.Domain.csproj"
               }
@@ -131,14 +128,14 @@
         }
       }
     },
-    "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain.Contracts\\ProductService.Products.Domain.Contracts.csproj": {
+    "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain\\ProductService.Products.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain.Contracts\\ProductService.Products.Domain.Contracts.csproj",
-        "projectName": "ProductService.Products.Domain.Contracts",
-        "projectPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain.Contracts\\ProductService.Products.Domain.Contracts.csproj",
+        "projectUniqueName": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain\\ProductService.Products.Domain.csproj",
+        "projectName": "ProductService.Products.Domain",
+        "projectPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain\\ProductService.Products.Domain.csproj",
         "packagesPath": "C:\\Users\\46\\.nuget\\packages\\",
-        "outputPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain.Contracts\\obj\\",
+        "outputPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\46\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -164,63 +161,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
-          "runtimeIdentifierGraphPath": "D:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain\\ProductService.Products.Domain.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain\\ProductService.Products.Domain.csproj",
-        "projectName": "ProductService.Products.Domain",
-        "projectPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain\\ProductService.Products.Domain.csproj",
-        "packagesPath": "C:\\Users\\46\\.nuget\\packages\\",
-        "outputPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\46\\AppData\\Roaming\\NuGet\\NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain.Contracts\\ProductService.Products.Domain.Contracts.csproj": {
-                "projectPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain.Contracts\\ProductService.Products.Domain.Contracts.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
@@ -268,6 +214,9 @@
               },
               "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.AppServices\\ProductService.Products.AppServices.csproj": {
                 "projectPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.AppServices\\ProductService.Products.AppServices.csproj"
+              },
+              "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Persistence\\ProductService.Products.Persistence.csproj": {
+                "projectPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Persistence\\ProductService.Products.Persistence.csproj"
               }
             }
           }
@@ -281,6 +230,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.7.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -296,6 +251,80 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "D:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Persistence\\ProductService.Products.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Persistence\\ProductService.Products.Persistence.csproj",
+        "projectName": "ProductService.Products.Persistence",
+        "projectPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Persistence\\ProductService.Products.Persistence.csproj",
+        "packagesPath": "C:\\Users\\46\\.nuget\\packages\\",
+        "outputPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\46\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.AppServices\\ProductService.Products.AppServices.csproj": {
+                "projectPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.AppServices\\ProductService.Products.AppServices.csproj"
+              },
+              "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain\\ProductService.Products.Domain.csproj": {
+                "projectPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain\\ProductService.Products.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

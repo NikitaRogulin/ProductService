@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using ProductService.Products.Domain.Contracts.Models;
 using ProductService.Products.Domain.IRepository;
+using ProductService.Products.Domain.Models;
 
 namespace ProductService.Products.Persistence.Repositories;
 
@@ -12,6 +12,7 @@ public class SalesPointRepository : ISalesPointRepository
     {
         _dbSet = context.SalePoints;
     }
+
     public void Create(SalesPoint salesPoint)
     {
         _dbSet.Add(salesPoint);
@@ -19,8 +20,8 @@ public class SalesPointRepository : ISalesPointRepository
 
     public async ValueTask<SalesPoint?> GetById(long id, CancellationToken cancellationToken = default)
     {
-        return await _dbSet.Include(x=> x.ProvidedProducts)
-            .ThenInclude(x=> x.Product)
+        return await _dbSet.Include(x => x.ProvidedProducts)
+            .ThenInclude(x => x.Product)
             .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
     }
 

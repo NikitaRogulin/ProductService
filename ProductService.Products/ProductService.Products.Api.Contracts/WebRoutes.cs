@@ -27,6 +27,5 @@ public static class WebRoutes
         public const string Create = Path + "/create";
         public const string Delete = GetById + "/delete";
         public const string Update = Path + "/update";
-        public const string Sell = Path + "/sell";
     }
 }

@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using ProductService.Products.Domain.Contracts.Models;
 using ProductService.Products.Domain.IRepository;
+using ProductService.Products.Domain.Models;
 
 namespace ProductService.Products.Persistence.Repositories;
 
@@ -12,6 +12,7 @@ public class SaleRepository : ISaleRepository
     {
         _dbSet = context.Sales;
     }
+
     public void Create(Sale sale)
     {
         _dbSet.Add(sale);

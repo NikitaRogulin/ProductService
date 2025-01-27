@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pgwKgq8Xt1UApEsDzhr9DDGwj6fVqE15ohMoY+kSFPcjH9xsLRRmdauOsc3flp2IzDY5KWD3DcjQYZK+AVjxiA==",
+  "dgSpecHash": "GgR068anyT+IPoc1e17ZQBof5/jn7NCidzF/WQp71jzNoGA2b5uYXlpqkk1SvkFVTizo3ijlRYEFO5f3rb/znQ==",
   "success": true,
   "projectFilePath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain.UnitTests\\ProductService.Products.Domain.UnitTests.csproj",
   "expectedPackageFiles": [

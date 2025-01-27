@@ -9,6 +9,12 @@
     <ItemGroup>
       <ProjectReference Include="..\ProductService.Products.Api.Contracts\ProductService.Products.Api.Contracts.csproj" />
       <ProjectReference Include="..\ProductService.Products.AppServices\ProductService.Products.AppServices.csproj" />
+      <ProjectReference Include="..\ProductService.Products.Persistence\ProductService.Products.Persistence.csproj" />
+        
+    </ItemGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.7.0"/>
     </ItemGroup>
 
 </Project>

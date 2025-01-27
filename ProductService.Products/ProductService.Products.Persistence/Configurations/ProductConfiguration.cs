@@ -1,10 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using ProductService.Products.Domain.Contracts.Models;
+using ProductService.Products.Domain.Models;
 
 namespace ProductService.Products.Persistence.Configurations;
 
-public class ProductAggregateConfiguration : IEntityTypeConfiguration<Product>
+public class ProductConfiguration : IEntityTypeConfiguration<Product>
 {
     public void Configure(EntityTypeBuilder<Product> builder)
     {

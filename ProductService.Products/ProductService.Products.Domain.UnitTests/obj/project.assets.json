@@ -394,6 +394,19 @@
           }
         }
       },
+      "ProductService.Products.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/ProductService.Products.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProductService.Products.Domain.dll": {}
+        }
+      },
       "ProductService.Products.Domain.Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -830,6 +843,11 @@
         "xunit.extensibility.execution.nuspec"
       ]
     },
+    "ProductService.Products.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ProductService.Products.Domain/ProductService.Products.Domain.csproj",
+      "msbuildProject": "../ProductService.Products.Domain/ProductService.Products.Domain.csproj"
+    },
     "ProductService.Products.Domain.Contracts/1.0.0": {
       "type": "project",
       "path": "../ProductService.Products.Domain.Contracts/ProductService.Products.Domain.Contracts.csproj",
@@ -839,6 +857,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.NET.Test.Sdk >= 17.11.1",
+      "ProductService.Products.Domain >= 1.0.0",
       "ProductService.Products.Domain.Contracts >= 1.0.0",
       "xunit >= 2.9.0"
     ]
@@ -870,6 +889,9 @@
           "projectReferences": {
             "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain.Contracts\\ProductService.Products.Domain.Contracts.csproj": {
               "projectPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain.Contracts\\ProductService.Products.Domain.Contracts.csproj"
+            },
+            "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain\\ProductService.Products.Domain.csproj": {
+              "projectPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain\\ProductService.Products.Domain.csproj"
             }
           }
         }

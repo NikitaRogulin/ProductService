@@ -1,4 +1,4 @@
-using ProductService.Products.Domain.Contracts.Models;
+using ProductService.Products.Domain.Models;
 
 namespace ProductService.Products.Domain.IRepository;
 

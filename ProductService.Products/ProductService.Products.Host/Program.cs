@@ -1,6 +1,5 @@
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+using ProductService.Products.Host;
 
-app.MapGet("/", () => "Hello World!");
+var host = HostBuilderFactory<Startup>.CreateHostBuilder(args).Build();
 
-app.Run();
+await host.RunAsync();

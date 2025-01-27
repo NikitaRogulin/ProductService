@@ -250,6 +250,19 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Diagnostics.DiagnosticSource/9.0.1": {
         "type": "package",
         "compile": {
@@ -279,8 +292,7 @@
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "9.0.1",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.1",
-          "ProductService.Products.Domain": "1.0.0",
-          "ProductService.Products.Domain.Contracts": "1.0.0"
+          "ProductService.Products.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ProductService.Products.AppServices.dll": {}
@@ -293,23 +305,13 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "ProductService.Products.Domain.Contracts": "1.0.0"
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
           "bin/placeholder/ProductService.Products.Domain.dll": {}
         },
         "runtime": {
           "bin/placeholder/ProductService.Products.Domain.dll": {}
-        }
-      },
-      "ProductService.Products.Domain.Contracts/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/ProductService.Products.Domain.Contracts.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ProductService.Products.Domain.Contracts.dll": {}
         }
       }
     }
@@ -708,6 +710,33 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "System.Diagnostics.DiagnosticSource/9.0.1": {
       "sha512": "yOcDWx4P/s1I83+7gQlgQLmhny2eNcU0cfo1NBWi+en4EAI38Jau+/neT85gUW6w1s7+FUJc2qNOmmwGLIREqA==",
       "type": "package",
@@ -749,11 +778,6 @@
       "type": "project",
       "path": "../ProductService.Products.Domain/ProductService.Products.Domain.csproj",
       "msbuildProject": "../ProductService.Products.Domain/ProductService.Products.Domain.csproj"
-    },
-    "ProductService.Products.Domain.Contracts/1.0.0": {
-      "type": "project",
-      "path": "../ProductService.Products.Domain.Contracts/ProductService.Products.Domain.Contracts.csproj",
-      "msbuildProject": "../ProductService.Products.Domain.Contracts/ProductService.Products.Domain.Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -762,8 +786,7 @@
       "Microsoft.EntityFrameworkCore.InMemory >= 9.0.1",
       "Microsoft.EntityFrameworkCore.Relational >= 9.0.1",
       "ProductService.Products.AppServices >= 1.0.0",
-      "ProductService.Products.Domain >= 1.0.0",
-      "ProductService.Products.Domain.Contracts >= 1.0.0"
+      "ProductService.Products.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -793,9 +816,6 @@
           "projectReferences": {
             "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.AppServices\\ProductService.Products.AppServices.csproj": {
               "projectPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.AppServices\\ProductService.Products.AppServices.csproj"
-            },
-            "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain.Contracts\\ProductService.Products.Domain.Contracts.csproj": {
-              "projectPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain.Contracts\\ProductService.Products.Domain.Contracts.csproj"
             },
             "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain\\ProductService.Products.Domain.csproj": {
               "projectPath": "E:\\C#\\ProductService.Products\\ProductService.Products\\ProductService.Products.Domain\\ProductService.Products.Domain.csproj"
